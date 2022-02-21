@@ -41,7 +41,7 @@
         font-weight: 400;
         font-family: "PT Sans";
         text-decoration: none;
-        padding: 1% 0%;
+        padding: 2% 0%;
     }
 
     &__link:hover {
@@ -49,4 +49,6 @@
     }
 }
 
-
+body {
+    background-color: #f8f8f8;
+}

@@ -1,0 +1,266 @@
+@media screen and (max-width: 1440px) {
+    .about__text {
+        font-size: 11px;
+    }
+    .about__btn {
+        font-size: 11px;
+    }
+
+    .footer {
+
+        &__title {
+            font-size: 30px;
+            line-height: 35px;
+            margin-bottom: 5%;
+        } 
+
+
+        &__link {
+            font-size: 13px;
+        }
+    }
+}
+@media screen and (max-width: 1300px) {
+    .nav__link {
+        font-size: 13px;
+    }
+
+    .slide__title {
+        font-size: 40px;
+    }
+    .slide__subtitle {
+        font-size: 15px;
+        margin: 3% 0%;
+    }
+
+
+
+
+
+    .about__text {
+        font-size: 9px;
+    }
+    .about__btn {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .nav__link {
+        font-size: 10px;
+    }
+
+    .slider {
+        width: 70%;
+    }
+
+
+
+    .about__text {
+        font-size: 7px;
+    }
+    .about__btn {
+        font-size: 7px;
+    }
+    .contact {
+        &__banner {
+            margin: 3% 10%;
+        }
+    }
+
+    .footer {
+        padding: 0% 10%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav__link {
+        font-size: 7px;
+    }
+    .slider {
+        width: 100%;
+    }
+
+
+    .about {
+        width: 100%;
+    
+        &__text {
+            width: 100%;
+            font-size: 10px;
+            text-align: center;
+        }
+        &__btn {
+            font-size: 10px;
+        }
+    }
+
+    .contact {
+        &__banner {
+            margin: 3% 10%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .banner {
+        width: 100%;
+        margin-bottom: 3%;
+
+        &__title {
+            font-size: 20px;
+            margin: 0%;
+            text-align: center;
+        }
+
+        &__empty {
+            width: 100%;
+            padding: 3%;
+            text-align: center;
+            margin: 0%;
+            justify-content: center;
+        }
+    }
+
+    .footer {
+
+        &__title {
+            font-size: 27px;
+            line-height: 30px;
+            margin-bottom: 5%;
+        } 
+        &__subtitle {
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+
+        &__link {
+            font-size: 10px;
+        }
+
+        &__bottom--text {
+            font-size: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header{
+    
+        &__title {
+            font-size: 25px;
+        }
+        &__subtitle {
+            font-size: 13px;
+        }
+    }
+
+    .nav__link {
+        font-size: 5px;
+    }
+
+    .slide__title {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .slide__subtitle {
+        font-size: 12px;
+        margin: 3% 0%;
+        line-height: 23px;
+    }
+
+    .my-dots {
+        bottom: -45px;
+        justify-content: center;
+    }
+
+
+    .footer {
+        &__head {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+
+        &__content {
+            width: 100%;
+        }
+
+        &__link {
+            margin: 0%;
+        }
+
+        &__bottom--text {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav__link {
+        font-size: 15px;
+    }
+
+    .my-dots {
+        bottom: -30px;
+        justify-content: center;
+        padding: 0%;
+    }
+    .my-dots li {
+        position: relative;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 0 10px;
+        padding: 0;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header{
+    
+        &__title {
+            font-size: 20px;
+        }
+        &__subtitle {
+            font-size: 10px;
+        }
+    }
+
+    .nav__link {
+        font-size: 10px;
+    }
+
+    .slide__title {
+        font-size: 23px;
+        line-height: 30px;
+    }
+    .slide__subtitle {
+        font-size: 10px;
+        margin: 3% 0%;
+        line-height: 23px;
+    }
+
+
+
+    .about {
+        width: 100%;
+    
+        &__text {
+            width: 100%;
+            font-size: 7px;
+            text-align: center;
+        }
+        &__btn {
+            font-size: 7px;
+        }
+    }
+
+}
