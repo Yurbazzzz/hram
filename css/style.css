@@ -214,14 +214,21 @@ body {
 }
 .news__content--nav {
   margin: 4% 0%;
+  width: 98%;
+  margin: 0% 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .card {
@@ -276,6 +283,7 @@ body {
   background: none;
   border: 2px solid #48974c;
   padding: 4% 7%;
+  cursor: pointer;
 }
 .card__btn:hover {
   border: 2px solid #48974c;
@@ -343,47 +351,49 @@ body {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   margin: 6px 5px;
+  cursor: pointer;
 }
 
 .news-nav {
+  margin: 2% 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+.news-nav__link {
+  width: 73px;
+  height: 60px;
+  background-color: white;
+  font-weight: 400;
+  font-family: "PT Sans";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2%;
+  -webkit-filter: drop-shadow(0 0 9px rgba(0, 0, 0, 0.04));
+          filter: drop-shadow(0 0 9px rgba(0, 0, 0, 0.04));
+}
+.news-nav__link-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-.news-nav__link {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: white;
-  text-align: center;
-  width: 10%;
-}
-.news-nav__link-number {
-  padding: 25%;
-  font-size: 16px;
-  letter-spacing: 0px;
-  line-height: 22px;
-  color: black;
-  font-weight: 400;
-  font-family: "PT Sans";
-}
-.news-nav__link-dots {
-  margin: 3%;
-}
 
-.active .news-nav__link-number {
+.active {
   background-color: #48974c;
   color: white;
 }
@@ -391,21 +401,31 @@ body {
 .nav-left-arrow {
   width: 5px;
   height: 5px;
-  border-top: 3px solid black;
-  border-right: 3px solid black;
+  border-top: 3px solid #b3b3b3;
+  border-right: 3px solid #b3b3b3;
   -webkit-transform: rotate(225deg);
           transform: rotate(225deg);
-  margin: 6px 5px;
+  cursor: pointer;
 }
 
 .nav-right-arrow {
   width: 5px;
   height: 5px;
-  border-top: 3px solid black;
-  border-right: 3px solid black;
+  border-top: 3px solid #b3b3b3;
+  border-right: 3px solid #b3b3b3;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  margin: 6px 5px;
+  cursor: pointer;
+}
+
+.nav-left-arrow:hover {
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+}
+
+.nav-right-arrow:hover {
+  border-top: 3px solid black;
+  border-right: 3px solid black;
 }
 
 .contact__about {
@@ -568,6 +588,35 @@ a {
 }
 
 @media screen and (max-width: 1440px) {
+  .card {
+    text-align: center;
+  }
+  .card__title {
+    font-size: 22px;
+  }
+  .card__subtitle {
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .card__btn {
+    font-size: 10px;
+  }
+  .card__small {
+    width: 40.5%;
+  }
+
+  .news__sidebar {
+    width: 46%;
+  }
+  .news__content {
+    width: 46%;
+  }
+
+  .news-nav__link {
+    width: 60px;
+    height: 45px;
+  }
+
   .about__text {
     font-size: 11px;
   }
@@ -599,6 +648,15 @@ a {
     margin: 3% 0%;
   }
 
+  .news-nav {
+    margin: 1% 1%;
+  }
+  .news-nav__link {
+    width: 48px;
+    height: 36px;
+    font-size: 10px;
+  }
+
   .about__text {
     font-size: 9px;
   }
@@ -614,6 +672,35 @@ a {
 
   .slider {
     width: 70%;
+  }
+
+  .news {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .news__sidebar {
+    width: 100%;
+  }
+  .news__sidebar--btn {
+    margin-top: 3%;
+    padding: 3% 4%;
+  }
+  .news__content {
+    width: 100%;
+  }
+  .news__content--nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .card {
+    margin: 2% 0%;
   }
 
   .about__text {
@@ -722,11 +809,54 @@ a {
     line-height: 23px;
   }
 
+  .invite {
+    padding: 2% 2% 7% 2%;
+  }
+
+  .news {
+    padding: 2% 2%;
+  }
+
+  .contact__about {
+    padding: 10% 2%;
+  }
+
+  .news-nav {
+    margin: 1% 1%;
+  }
+  .news-nav__link {
+    width: 43px;
+    height: 33px;
+    font-size: 10px;
+  }
+
   .my-dots {
     bottom: -45px;
+    padding: 0%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .card__title {
+    font-size: 18px;
+  }
+  .card__social--icon {
+    width: 25px;
+    margin: 0% 3%;
+  }
+  .card__arrow-btn {
+    width: 13px;
+    height: 13px;
+  }
+  .card__small-btn {
+    font-size: 10px;
+  }
+
+  .right-arrow {
+    width: 3px;
+    height: 3px;
+    margin: 3px 3px;
   }
 
   .footer__head {
@@ -784,6 +914,27 @@ a {
     padding: 0;
     cursor: pointer;
   }
+
+  .card__subtitle {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .card__btn {
+    padding: 3% 5%;
+  }
+  .card__social--icon {
+    width: 20px;
+    margin: 0% 3%;
+  }
+
+  .news-nav {
+    margin: 1% 1%;
+  }
+  .news-nav__link {
+    width: 35px;
+    height: 25px;
+    font-size: 7px;
+  }
 }
 @media screen and (max-width: 375px) {
   .header__title {
@@ -806,6 +957,19 @@ a {
     font-size: 10px;
     margin: 3% 0%;
     line-height: 23px;
+  }
+
+  .news-nav {
+    margin: 1% 1%;
+  }
+  .news-nav__link {
+    width: 30px;
+    height: 20px;
+    font-size: 7px;
+  }
+
+  .card__btn {
+    padding: 3% 3%;
   }
 
   .about {

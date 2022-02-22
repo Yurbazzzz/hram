@@ -1,4 +1,41 @@
 @media screen and (max-width: 1440px) {
+
+    .card {
+        text-align: center;
+
+        &__title {
+            font-size: 22px;
+        }
+        &__subtitle {
+            font-size: 13px;
+            line-height: 19px;
+ 
+        }
+        &__btn {
+            font-size: 10px;
+        }
+
+        &__small {
+            width: 40.5%;
+        }
+    }
+
+    .news {
+        &__sidebar {
+            width: 46%;
+        }
+
+        &__content {
+            width: 46%;
+        }
+            
+    }
+    
+    .news-nav__link {
+        width: 60px;
+        height: 45px;
+    }
+
     .about__text {
         font-size: 11px;
     }
@@ -33,9 +70,15 @@
         margin: 3% 0%;
     }
 
-
-
-
+    .news-nav {
+        margin: 1% 1%;
+    
+        &__link {
+            width: 48px;
+            height: 36px;
+            font-size: 10px;
+        }
+    }
 
     .about__text {
         font-size: 9px;
@@ -54,7 +97,33 @@
         width: 70%;
     }
 
+    .news {
+        display: flex;
+        flex-direction: column;
 
+        &__sidebar {
+            width: 100%;
+
+        }
+
+        &__sidebar--btn {
+            margin-top: 3%;
+            padding: 3% 4%;
+        }
+
+        &__content {
+            width: 100%;
+        }
+
+        &__content--nav {
+            justify-content: center;
+        }
+        
+    }
+
+    .card {
+        margin: 2% 0%;
+    }
 
     .about__text {
         font-size: 7px;
@@ -169,11 +238,60 @@
         line-height: 23px;
     }
 
+    .invite {
+        padding: 2% 2% 7% 2%;
+    }
+    .news {
+        padding: 2% 2%;
+    }
+    .contact {
+        
+        &__about {
+            padding: 10% 2%;
+        }
+    }
+
+    .news-nav {
+        margin: 1% 1%;
+    
+        &__link {
+            width: 43px;
+            height: 33px;
+            font-size: 10px;
+        }
+    }
     .my-dots {
         bottom: -45px;
+        padding: 0%;
         justify-content: center;
     }
 
+    .card {
+
+        &__title {
+            font-size: 18px;
+        }
+
+        &__social--icon {
+            width: 25px;
+            margin: 0% 3%;
+        }
+
+        &__arrow-btn {
+            width: 13px;
+            height: 13px;
+        }
+
+        &__small-btn {
+            font-size: 10px;
+        }
+    }
+
+    .right-arrow {
+        width: 3px;
+        height: 3px;
+        margin: 3px 3px;
+    }
 
     .footer {
         &__head {
@@ -221,6 +339,32 @@
         padding: 0;
         cursor: pointer;
     }
+
+    .card {
+        &__subtitle {
+            font-size: 10px;
+            line-height: 14px;
+        }
+
+        &__btn {
+            padding: 3% 5%;
+        }
+
+        &__social--icon {
+            width: 20px;
+            margin: 0% 3%;
+        }
+    }
+
+    .news-nav {
+        margin: 1% 1%;
+    
+        &__link {
+            width: 35px;
+            height: 25px;
+            font-size: 7px;
+        }
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -248,7 +392,23 @@
         line-height: 23px;
     }
 
+    .news-nav {
+        margin: 1% 1%;
+    
+        &__link {
+            width: 30px;
+            height: 20px;
+            font-size: 7px;
+        }
+    }
 
+    .card {
+
+        &__btn {
+            padding: 3% 3%;
+        }
+
+    }
 
     .about {
         width: 100%;
